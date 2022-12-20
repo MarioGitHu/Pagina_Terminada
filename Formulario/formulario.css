@@ -1,0 +1,108 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+a{text-decoration: none;
+  color: white;}
+* {
+    box-sizing: border-box;
+    font-family: lato,sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #171717;
+    color: white;
+  }
+  
+  input, textarea {
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+    position: relative;
+    font-family: lato, sans-serif;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+  .content .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(10, 10, 10, 0.5);
+    border-radius: 2px;
+  }
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-item {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+  }
+  @media only screen and (min-width: 600px) {
+    .form-item.col-5 {
+      width: 50%;
+    }
+  }
+  .form-item .textarea {
+    height: 4em;
+  }
+  .form-item .input, .form-item .textarea {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bf74d4;
+  }
+  .form-item .input:focus, .form-item .textarea:focus {
+    border-bottom: 2px solid #c9a7d2;
+  }
+  .form-item .input:valid + .label, .form-item .input:focus + .label, .form-item .textarea:valid + .label, .form-item .textarea:focus + .label {
+    top: 1em;
+    left: 1em;
+    font-size: 0.9em;
+  }
+  .form-item .input:valid, .form-item .textarea:valid {
+    border-bottom: 2px solid #bf74d4;
+  }
+  .form-item .label {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    text-transform: capitalize;
+    transition: all 0.3s;
+  }
+  .form-item .btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    box-shadow: 0 0 0 2px #bf74d4;
+    color: #bf74d4;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .form-item .btn-enviar:hover {
+    background: #bf74d4;
+    color: white;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  .form-item .btn-enviar:active {
+    background: #bf74d4;
+    transform: scale(0.97);
+  }
+
+  p{color: #bf74d4;}
